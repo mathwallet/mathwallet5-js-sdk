@@ -5,14 +5,6 @@ class MathWallet {
     return postMessage.isMathWallet;
   }
 
-  openUrl(url) {
-    return postMessage.send('openURL', {url});
-  }
-
-  openThirdApp(url) {
-    return postMessage.send('openThirdApplication', {url});
-  }
-
   getAppInfo() {
     return postMessage.send('getAppInfo');
   }

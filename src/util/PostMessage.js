@@ -14,14 +14,14 @@ class PostMessageResolver {
 const PostMessageSend = (_method, _payload, messageHandler) => {
   return new Promise((resolve, reject) => {
     callbackId++;
-    resolvers.push(new PostMessageResolver(`${id}`, resolve, reject));
+    resolvers.push(new PostMessageResolver(`${callbackId}`, resolve, reject));
 
     let message = {
-      id : `${id}`,
+      id : `${callbackId}`,
       method : _method,
       params : _payload
     };
-    messageHandler.postMessage(_method, JSON.stringify(message))
+    messageHandler.postMessage(JSON.stringify(message))
   });
 };
 

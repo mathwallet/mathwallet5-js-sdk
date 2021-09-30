@@ -58,35 +58,9 @@ Return
 }
 ```
 
-#### openUrl
-打开一个新的浏览器窗口  
-Open a new webview tab
-```javascript
-mathwallet.openUrl("http://www.mathwallet.org").then(console.log);
-```
-Return
-```javascript
-{
-  "result": 1
-}
-```
-
-#### openThirdApp
-打开第三方应用，如微信、KakaoTalk等  
-Open third app like Wechat, KakaoTalk.
-```javascript
-mathwallet.openThirdApp("tel:110").then(console.log);
-```
-Return
-```javascript
-{
-  "result": 1
-}
-```
-
 #### walletPicker
 获取
-Get user current wallet info
+Get user wallet info
 ```javascript
 mathwallet.walletPicker().then(console.log);
 ```
