@@ -34,7 +34,7 @@ Common method for MathWallet DAPP Browser
 
 #### isMath
 ```javascript
-mathwallet.isMath();
+mathwallet.isMathWallet();
 ```
 Return
 ```javascript
