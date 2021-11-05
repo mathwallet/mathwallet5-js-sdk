@@ -9,6 +9,10 @@ class MathWallet {
     return postMessage.send('getAppInfo');
   }
 
+  getCurrentWallet() {
+    return postMessage.send('getCurrentWallet');
+  }
+
   walletPicker() {
     return postMessage.send('walletPicker');
   }
