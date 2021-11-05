@@ -42,7 +42,7 @@ class PostMessage {
   constructor() {
     this.isMathWallet = browser.mathwallet
     if(browser.mathwallet && browser.android) {
-      this.postMessageHandler = window.mathwallet;
+      this.postMessageHandler = window.mathwallet5;
     }else if(browser.mathwallet && browser.iPhone && typeof window.webkit != 'undefined'){
       this.postMessageHandler = window.webkit.messageHandlers.mathwallet;
     }else{
