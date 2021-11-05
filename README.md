@@ -42,7 +42,8 @@ true
 ```
 
 #### getAppInfo
-获取用户麦子钱包信息  
+获取用户麦子钱包信息
+
 Get user MathWallet info
 ```javascript
 mathwallet.getAppInfo().then(console.log);
@@ -58,8 +59,26 @@ Return
 }
 ```
 
+#### getCurrentWallet
+获取用户当前钱包信息
+
+Get user current wallet info
+```javascript
+mathwallet.getCurrentWallet().then(console.log);
+```
+Return
+```javascript
+{
+  "chainType":"EVM",   
+  "chainId":"1",
+  "name":"ETH-01",
+  "address":"0x000000000000000000000000000000"
+}
+```
+
 #### walletPicker
-获取
+从当前链所有钱包中，选出要授权的钱包
+
 Get user wallet info
 ```javascript
 mathwallet.walletPicker().then(console.log);
@@ -67,7 +86,7 @@ mathwallet.walletPicker().then(console.log);
 Return
 ```javascript
 {
-  "chainType":"Ethereum",
+  "chainType":"EVM",   
   "chainId":"1",
   "name":"ETH-01",
   "address":"0x000000000000000000000000000000"
