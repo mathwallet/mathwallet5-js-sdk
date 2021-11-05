@@ -24,6 +24,13 @@
           alert(e.message)
         })
       }
+      function getCurrentWallet(){
+        window.mathwallet.getCurrentWallet().then(result => {
+          alert(JSON.stringify(result))
+        }).catch(e => {
+          alert(e.message)
+        })
+      }
       function walletPicker(){
         window.mathwallet.walletPicker().then(result => {
           alert(JSON.stringify(result))
@@ -38,6 +45,7 @@
 
     <button type="button" class="btn btn-outline-success" onclick="isMathWallet()">isMathWallet</button></br></br>
     <button type="button" class="btn btn-outline-success" onclick="getAppInfo()"> AppInfo</button></br></br>
+    <button type="button" class="btn btn-outline-success" onclick="getCurrentWallet()"> getCurrentWallet</button></br></br>
     <button type="button" class="btn btn-outline-success" onclick="walletPicker()"> walletPicker</button></br></br>
   </body>
 </html>
