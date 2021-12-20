@@ -95,8 +95,8 @@ Return
 
 ### Download Math Wallet 麦子钱包下载
 
-[http://mathwallet.org](http://mathwallet.org)  
+[https://mathwallet.org](https://mathwallet.org/)  
 
-如果您希望将您开发的DAPP加入麦子钱包，请通过邮箱联系我们 hello@medishares.org  
+如果您希望将您开发的DAPP加入麦子钱包，请通过邮箱联系我们 labs@mathwallet.org 
   
-If you would like to list your DAPP in Math Wallet, please send your DAPP information to hello@medishares.org
+If you would like to list your DAPP in Math Wallet, please send your DAPP information to labs@mathwallet.org
